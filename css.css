@@ -346,6 +346,7 @@ a:hover{
 
 .t-icons img{
     width: 15%;
+    height: auto;
     margin-left: 5%;
 }
 .tech{
