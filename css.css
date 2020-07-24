@@ -23,7 +23,7 @@ html{
 .container1 #hello{
     position: relative;
     font-size: 10em;
-    color: whitesmoke;
+    color: silver;
 }
 .container1 .clouds{
     position: absolute;
