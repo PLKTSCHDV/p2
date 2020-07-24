@@ -1,0 +1,416 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.container1 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/pulkit.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 #hello{
+    position: relative;
+    font-size: 10em;
+    color: whitesmoke;
+}
+.container1 .clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.container1 .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: clouds calc(3s * var(--i)) linear infinite;
+}
+@keyframes clouds{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    25%,75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+section{
+    position: relative;
+    padding: 75px 100px;
+}
+.cursor{
+    font-size: 7em;
+}
+@keyframes cursor{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+.history{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 6em;
+    padding: 10px;
+    margin-top: 8%;
+    background-color: whitesmoke;
+    
+}
+.history-contents{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 2%;
+    color: gray;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.icons{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 3%;
+}
+.icons img{
+    width: 6%;
+    margin-left: 5%;
+}
+.t-icons{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.t-icons img{
+    width: 8%;
+    margin-left: 5%;
+}
+.icons img:hover{
+    transform: translateY(-30px);
+    transition: 0.3s;
+}
+.tech{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 4em;
+    padding: 10px;
+    margin-top: 8%;
+    background-color: whitesmoke;
+}
+.more-tech{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: gray;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 3%;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 4em;
+    padding: 10px;
+    margin-top: 8%;
+    
+}
+.container2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 30px;
+   border: 1px solid #fff;
+}
+.more-css{
+    width: 100%;
+    height: auto;
+    color: gray;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.more-css img{
+    width:2%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.projects{
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding: 10px;
+    
+    border: 1px solid #fff;
+    
+}
+.projects img{
+    width: 40%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.projects img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 8%;
+    color: whitesmoke;
+
+    background-color: black;
+}
+.contact-form{
+    margin-top: 3%;
+}
+.contact-form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.sbmtbtn{
+    margin-top: 3%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    width: 25%;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.sbmtbtn:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 8%;
+    background-color: whitesmoke;
+}
+.footer img{
+    width: 1%;
+    height: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    transition: 0.3s;
+    color: black;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .footer img{
+    width: 5%;
+    height: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+    .container1 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url("images/pulkit.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .container1 #hello{
+    position: relative;
+    font-size: 2em;
+    color: whitesmoke;
+}
+.cursor{
+    font-size: 2.5em;
+    margin-left: -15px;
+}
+
+.history{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 3em;
+    padding: 10px;
+    margin-top: 8%;
+}
+.history-contents{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 12%;
+    color: gray;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.icons{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 10%;
+}
+.icons img{
+    width: 10%;
+    margin-left: 5%;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 8%;
+}
+.t-icons{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.t-icons img{
+    width: 15%;
+    margin-left: 5%;
+}
+.tech{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10%;
+    text-align: center;
+}
+.more-tech{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: gray;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 3%;
+}
+.projects{
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.projects img{
+    width: 100%;
+    height: auto;
+    margin: 3%;
+}
+.projects img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.more-css{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: gray;
+    font-size: 1em;
+    padding: 10px;
+}
+.more-css img{
+    width:4%;
+    height: auto;
+      
+}
+
+section{
+    position: relative;
+    padding: 20px 30px;
+}
+
+
+
+}
+

@@ -1,0 +1,171 @@
+<html>
+    <title>Pulkit Sachdeva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons/logo.png">
+     <link rel="stylesheet" type="text/css" href="css.css">
+     
+    <body>
+        <div class="container1">
+            <h2 id="hello">hello world,</h2> 
+            <script>
+                let t=document.getElementById("hello");
+                window.addEventListener('scroll', function(){
+                    let v=window.scrollY;
+                    t.style.marginBottom=v*2 + 'px';
+                })
+                </script>
+            <div class="clouds">
+                <img src="icons/cloud1.png" style="--i:1;">
+                <img src="icons/cloud2.png" style="--i:2;">
+                <img src="icons/cloud3.png" style="--i:3;">
+                <img src="icons/cloud4.png" style="--i:4;">
+                <img src="icons/cloud5.png" style="--i:5;">
+                <img src="icons/cloud1.png" style="--i:10;">
+                <img src="icons/cloud2.png" style="--i:9;">
+                <img src="icons/cloud3.png" style="--i:8;">
+                <img src="icons/cloud4.png" style="--i:7;">
+                <img src="icons/cloud5.png" style="--i:6;">
+            </div> 
+            </div>
+           
+           <section> 
+                <h1 class="cursor">
+                </h1>
+                <script>
+                    const texts=[ "Hi, I'm Pulkit.",
+                     "I'm a Developer.",
+                     "I do Front-end.",
+                     "I love CSS.",
+                     "I am Creative.",
+                     "I love Movies.", 
+                     "I love to sleep. "];
+                
+                    let current_text='';
+                    let letter='';
+                    var count=0;
+                    var index=0;
+                    (function cursor(){
+                        if(count===texts.length){
+                            count=0;
+                        }
+                        current_text=texts[count];
+                        letter=current_text.slice(0, ++index);
+            
+                        document.querySelector('.cursor').textContent=letter;
+                        if(letter.length===current_text.length){
+                        
+                        count++;
+                        index=0;
+                        }
+                        setTimeout(cursor, 150);
+                    }());
+            
+            
+                </script>
+           </section>
+                <div class="history">My History
+                </div>
+
+                
+                <div class="History-contents">
+                <h1>Infosys Ltd.</h1>
+                <p style="margin-top: 5px;">
+                    Working as an Intern with Infosys from Feb, 2020 till now.
+                </p>   
+                
+                <h1 style="margin-top: 10%;">Chitkara University</h1>
+                <p style="margin-top: 5px;">
+                    Graduated myself as BE Csc Engineer from Chitkara University, Himachal Pradesh in 2020.
+                </p>
+
+                <h1 style="margin-top: 10%;">St. Vivekanand Millennium School</h1>
+                <p style="margin-top: 5px;">
+                    Completed my high school from St.Vivekanand Millennium School in 2016.
+                </p>
+                
+                </div>
+
+                <div class="connect">Connect with me.
+                </div>
+                <center>     
+                <div class="icons">
+                 
+                <a href="https://www.twitter.com/PulkitS53679047" target="_blank"><img src="icons/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/pulkit_sachdeva" target="_blank"><img src="icons/instagram.png" alt="instagram"></a>
+                <a href="https://www.codepen.io/plktschdv" target="_blank"><img src="icons/codepen.png" alt="codepen"></a>
+                <a href="https://www.github.com/plktschdv" target="_blank"><img src="icons/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/plktschdvd" target="_blank"><img src="icons/linkedin.png" alt="linkedin"></a>
+                </div>    
+                </center>
+                <div class="tech">Techs that I am comfortable to work with.
+                </div>
+                
+                <div class="t-icons">
+                    <img src="icons/html-5.png" alt="twitter">
+                    <img src="icons/css.png" alt="css">
+                    <img src="icons/javascript.png" alt="javascript">
+                    <img src="icons/java.png" alt="java">
+                </div><div class="t-icons">   
+                    <img src="icons/jsp.png" alt="jsp">
+                    <img src="icons/mysql.png" alt="mysql">
+                    <img src="icons/python.png" alt="python">
+                    <img src="icons/wordpress.png" alt="wordpress">
+                </div>
+
+                <div class="more-tech">More techs appearing soon....
+                </div>
+                
+
+                <div class="tech">My CSS arts.
+                </div>
+                <div class="container2">
+                <center>
+                <div class="projects">
+                <a href="codepen.io/Plktschdv/pen/YzwYKzv"><img src="images/welcomescreen.PNG" style="margin-right: 2%;"></a>
+                   
+                <a href="codepen.io/Plktschdv/pen/LYGMgrB"><img src="images/globe.PNG" style="margin-left: 2%;"></a>
+                </div>
+                </center>
+                </div>
+                <center>
+                <div class="more-css"><a href="https://codepen.io/plktschdv">
+                        View more of my arts on
+                    <img src="icons/codepen.png" > CodePen</a>
+                   
+                    </div>
+                    </center>
+                <div class="tech">My Projects.
+                </div>
+               <center> <div class="projects">
+                    <a href="pulkitsachdeva.netlify.app"><img src="images/pulkitnetlify.png" style="margin-right: 2%;"></a>
+                    <a href="https://pranavmodi.in"><img src="images/modi.png" style="margin-left: 2%;"></a>
+                    </div>
+                <div class="more-css">
+                    <a href="https://github.com/plktschdv">     View more of my projects on
+                        <img src="icons/github.png"> Github</a>
+                        </div>
+                    </center>
+
+                <div class="Contact">
+                    Contact Me
+                </div>
+                <div class="contact-form">
+                    <form netlify>
+                   <center>     <input type="text" placeholder="Name" required>
+                        <br><input type="email" placeholder="Email"  required>
+                        <br><input type="text" placeholder="Comments"  required style="width:60%;height: 20%;">
+                    <button type="submit" onclick="clickx()" class="sbmtbtn">Submit</button>                
+                </center>    
+                        </form>
+                </div>   
+                <script>
+                    function clickx(){
+                        window.alert("Your details has been submitted");
+                    }
+                </script>
+                <div class="footer">
+                    Made with <img src="icons/heart.png">By Pulkit Sachdeva &copy
+                    </div>
+            </body>
+            </html>
+        
