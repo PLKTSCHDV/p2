@@ -235,6 +235,10 @@ section{
     transition: 0.5s;
     transform: scale(1.2);
 }
+.paybtn:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
 .footer{
     display: flex;
     justify-content: center;
