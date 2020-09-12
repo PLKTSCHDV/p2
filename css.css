@@ -23,7 +23,7 @@ html{
 .container1 #hello{
     position: relative;
     font-size: 10em;
-    color: whitesmoke;
+    color: silver;
 }
 .container1 .clouds{
     position: absolute;
@@ -115,6 +115,7 @@ section{
 
 .t-icons img{
     width: 8%;
+    height: auto;
     margin-left: 5%;
 }
 .icons img:hover{
@@ -179,12 +180,11 @@ section{
     height: auto;
     margin-top: 3%;
     padding: 10px;
-    
     border: 1px solid #fff;
-    
+    display: flex;
 }
 .projects img{
-    width: 40%;
+    width: 80%;
     border-radius: 5px;
     height: auto;
 }
@@ -235,6 +235,10 @@ section{
     transition: 0.5s;
     transform: scale(1.2);
 }
+.paybtn:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
 .footer{
     display: flex;
     justify-content: center;
@@ -260,6 +264,14 @@ a:hover{
     transition: 0.3s;
     color: black;
 }
+.pdetails{
+    margin-bottom: 20px;
+}
+.details{
+    color: grey;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
 
 
 @media only screen and (max-width: 500px) {
@@ -269,6 +281,11 @@ a:hover{
     height: auto;
     margin-left: 3px;
     margin-right: 3px;
+}
+.details{
+    color: grey;
+    margin-top: 5px;
+    font-size: 1em;
 }
 
     .container1 {
@@ -382,7 +399,7 @@ a:hover{
     align-items: center;
 }
 .projects img{
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 3%;
 }
@@ -408,6 +425,17 @@ a:hover{
 section{
     position: relative;
     padding: 20px 30px;
+}
+
+.sbmtbtn{
+    margin-top: 3%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    width: 50%;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 
